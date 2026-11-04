@@ -4,7 +4,7 @@
 Sistema predictivo y de gestión de riesgo para el índice **IPAP-BMC** de la Bolsa Mercantil de Colombia, desarrollado por el equipo **ASpectrum** como parte del DataLab Challenge. Su objetivo es anticipar la tendencia del mercado agropecuario y medir la volatilidad para optimizar la toma de decisiones y las coberturas financieras.
 
 ## 2. Principales Resultados Cuantitativos y Econométricos
-* **Validación Histórica (MAPE):** Se alcanzó un desempeño sobresaliente con un error porcentual absoluto medio del **7%** en la prueba histórica de los últimos 12 meses.
+* **Validación Histórica (MAPE):** Se alcanzó un desempeño sobresaliente con un error porcentual absoluto medio del **7%** en la prueba histórica de los últimos 12 meses[cite: 3].
 * **Poder Explicativo ($R^2$):** El modelo econométrico base logra un coeficiente de determinación ajustado del **98.18%**, capturando de manera efectiva la estacionalidad extrema del sector agropecuario.
 * **Persistencia de la Volatilidad (GARCH):** A través de la modelación GARCH(1,1), se identificó que la suma de los coeficientes $\alpha + \beta$ es extremadamente cercana a 1 (superando 0.99 en índices clave como *IP_agroipe* y *lechem*). Esto demuestra que los choques de precios en el agro **son altamente persistentes en el tiempo**, justificando la urgencia de utilizar instrumentos de cobertura en la Bolsa Mercantil.
 
@@ -69,75 +69,75 @@ Sistema predictivo y de gestión de riesgo para el índice **IPAP-BMC** de la Bo
 | 2023-09-23 | 237.54 | 228.48 | 3.81% |
 | 2023-09-30 | 228.08 | 228.64 | 0.24% |
 | 2023-10-07 | 226.92 | 228.78 | 0.82% |
-| **Promedio Final** | | | **MAPE = 7.0%** |
+| **Promedio Final** | | | **MAPE = 7.0%**[cite: 3] |
 
 ---
 
 ### Tabla 2: Pronóstico Oficial a 12 Meses (52 Observaciones Semanales hasta Octubre de 2026)
-*Proyección continua completa del modelo econométrico con periodicidad semanal*
+*Proyección continua oficial basada en los datos de la imagen y la hoja de cálculo.*
 
 | Fecha (Semanal) | IPAP Pronosticado | Límite Inferior | Límite Superior |
 | :--- | :--- | :--- | :--- |
-| 2025-10-18 | 227.93 | 219.01 | 236.85 |
-| 2025-10-25 | 228.14 | 218.42 | 237.85 |
-| 2025-11-01 | 228.34 | 217.91 | 238.77 |
-| 2025-11-08 | 228.55 | 217.47 | 239.62 |
-| 2025-11-15 | 228.75 | 217.08 | 240.42 |
-| 2025-11-22 | 228.95 | 216.73 | 241.17 |
-| 2025-11-29 | 229.16 | 216.41 | 241.90 |
-| 2025-12-06 | 229.36 | 216.12 | 242.60 |
-| 2025-12-13 | 229.56 | 215.86 | 243.27 |
-| 2025-12-20 | 229.77 | 215.61 | 243.92 |
-| 2025-12-27 | 229.97 | 215.39 | 244.55 |
-| 2026-01-03 | 230.17 | 215.18 | 245.16 |
-| 2026-01-10 | 230.38 | 214.99 | 245.76 |
-| 2026-01-17 | 230.58 | 214.81 | 246.34 |
-| 2026-01-24 | 230.79 | 214.65 | 246.92 |
-| 2026-01-31 | 230.99 | 214.50 | 247.48 |
-| 2026-02-07 | 231.19 | 214.36 | 248.03 |
-| 2026-02-14 | 231.40 | 214.23 | 248.56 |
-| 2026-02-21 | 231.60 | 214.11 | 249.09 |
-| 2026-02-28 | 231.80 | 214.00 | 249.60 |
-| 2026-03-07 | 232.01 | 213.90 | 250.11 |
-| 2026-03-14 | 232.21 | 213.81 | 250.61 |
-| 2026-03-21 | 232.41 | 213.72 | 251.10 |
-| 2026-03-28 | 232.62 | 213.64 | 251.59 |
-| 2026-04-04 | 232.82 | 213.57 | 252.07 |
-| 2026-04-11 | 233.02 | 213.50 | 252.54 |
-| 2026-04-18 | 233.23 | 213.43 | 253.02 |
-| 2026-04-25 | 233.43 | 213.38 | 253.48 |
-| 2026-05-02 | 233.64 | 213.32 | 253.95 |
-| 2026-05-09 | 233.84 | 213.27 | 254.40 |
-| 2026-05-16 | 234.04 | 213.23 | 254.85 |
-| 2026-05-23 | 234.25 | 213.19 | 255.30 |
-| 2026-05-30 | 234.45 | 213.15 | 255.75 |
-| 2026-06-06 | 234.65 | 213.12 | 256.19 |
-| 2026-06-13 | 234.86 | 213.10 | 256.62 |
-| 2026-06-20 | 235.06 | 213.08 | 257.05 |
-| 2026-06-27 | 235.26 | 213.06 | 257.47 |
-| 2026-07-04 | 235.47 | 213.04 | 257.90 |
-| 2026-07-11 | 235.67 | 213.03 | 258.31 |
-| 2026-07-18 | 235.87 | 213.02 | 258.73 |
-| 2026-07-25 | 236.08 | 213.01 | 259.14 |
-| 2026-08-01 | 236.28 | 213.01 | 259.55 |
-| 2026-08-08 | 236.48 | 213.01 | 259.95 |
-| 2026-08-15 | 236.69 | 213.01 | 260.36 |
-| 2026-08-22 | 236.89 | 213.01 | 260.76 |
-| 2026-08-29 | 237.10 | 213.01 | 261.18 |
-| 2026-09-05 | 237.30 | 213.02 | 261.58 |
-| 2026-09-12 | 237.50 | 213.03 | 261.98 |
-| 2026-09-19 | 237.71 | 213.04 | 262.38 |
-| 2026-09-26 | 237.91 | 213.05 | 262.77 |
-| 2026-10-03 | 238.11 | 213.07 | 263.16 |
-| **2026-10-07 (Cierre)** | **238.28** | **213.08** | **263.48** |
+| 18/10/2025 | 248.319986 | 204.99 | 291.65 |
+| 25/10/2025 | 248.521829 | 204.96 | 292.08 |
+| 01/11/2025 | 248.723672 | 204.94 | 292.51 |
+| 08/11/2025 | 248.925515 | 204.92 | 292.93 |
+| 15/11/2025 | 249.127358 | 204.90 | 293.36 |
+| 22/11/2025 | 249.329200 | 204.88 | 293.78 |
+| 29/11/2025 | 249.531043 | 204.86 | 294.20 |
+| 06/12/2025 | 249.732886 | 204.84 | 294.62 |
+| 13/12/2025 | 249.934729 | 204.82 | 295.05 |
+| 20/12/2025 | 250.136572 | 204.81 | 295.47 |
+| 27/12/2025 | 250.338415 | 204.79 | 295.89 |
+| 03/01/2026 | 250.540258 | 204.77 | 296.31 |
+| 10/01/2026 | 250.742101 | 204.76 | 296.73 |
+| 17/01/2026 | 250.943944 | 204.74 | 297.15 |
+| 24/01/2026 | 251.145787 | 204.73 | 297.56 |
+| 31/01/2026 | 251.347630 | 204.71 | 297.98 |
+| 07/02/2026 | 251.549473 | 204.70 | 298.40 |
+| 14/02/2026 | 251.751316 | 204.69 | 298.81 |
+| 21/02/2026 | 251.953159 | 204.68 | 299.23 |
+| 28/02/2026 | 252.155002 | 204.67 | 299.64 |
+| 07/03/2026 | 252.356845 | 204.66 | 300.06 |
+| 14/03/2026 | 252.558688 | 204.65 | 300.47 |
+| 21/03/2026 | 252.760531 | 204.64 | 300.89 |
+| 28/03/2026 | 252.962374 | 204.63 | 301.30 |
+| 04/04/2026 | 253.164217 | 204.62 | 301.71 |
+| 11/04/2026 | 253.366060 | 204.61 | 302.12 |
+| 18/04/2026 | 253.567902 | 204.60 | 302.53 |
+| 25/04/2026 | 253.769745 | 204.60 | 302.94 |
+| 02/05/2026 | 253.971588 | 204.59 | 303.35 |
+| 09/05/2026 | 254.173431 | 204.58 | 303.76 |
+| 16/05/2026 | 254.375274 | 204.58 | 304.17 |
+| 23/05/2026 | 254.577117 | 204.57 | 304.58 |
+| 30/05/2026 | 254.778960 | 204.57 | 304.99 |
+| 06/06/2026 | 254.980803 | 204.57 | 305.40 |
+| 13/06/2026 | 255.182646 | 204.56 | 305.80 |
+| 20/06/2026 | 255.384489 | 204.56 | 306.21 |
+| 27/06/2026 | 255.586332 | 204.56 | 306.62 |
+| 04/07/2026 | 255.788175 | 204.56 | 307.02 |
+| 11/07/2026 | 255.990018 | 204.55 | 307.43 |
+| 18/07/2026 | 256.191861 | 204.55 | 307.83 |
+| 25/07/2026 | 256.393704 | 204.55 | 308.24 |
+| 01/08/2026 | 256.595547 | 204.55 | 308.64 |
+| 08/08/2026 | 256.797390 | 204.55 | 309.04 |
+| 15/08/2026 | 256.999233 | 204.55 | 309.45 |
+| 22/08/2026 | 257.201076 | 204.55 | 309.85 |
+| 29/08/2026 | 257.402919 | 204.56 | 310.25 |
+| 05/09/2026 | 257.604762 | 204.56 | 310.65 |
+| 12/09/2026 | 257.806604 | 204.56 | 311.05 |
+| 19/09/2026 | 258.008447 | 204.56 | 311.45 |
+| 26/09/2026 | 258.210290 | 204.57 | 311.86 |
+| 03/10/2026 | 258.412133 | 204.57 | 312.26 |
+| **07/10/2026 (Cierre)** | **258.527472** | **204.57** | **312.48** |[cite: 3]
 
 ---
 
 ## 4. Estructura y Reproducibilidad del Repositorio
-* **`Concurso.xlsx`**: Datos oficiales, tablas de validación histórica (MAPE) y la proyección oficial a octubre de 2026.
+* **`Concurso.xlsx`**: Datos oficiales, tablas de validación histórica (MAPE) y la proyección oficial a octubre de 2026[cite: 3].
 * **`Resultados_GARCH_Indices.xlsx`**: Consolidado paramétrico de los modelos GARCH ($\mu$, $\omega$, $\alpha$, $\beta$, persistencia, AIC y BIC) para cada subsector.
 * **`untitled6.py`**: Script automatizado en Python que ejecuta la ingesta, las gráficas de series temporales, la estimación de volatilidad con la librería `arch` y la exportación de resultados.
-* **`Presentacion_Ejecutiva_RetoB.pdf`**: Pitch deck ejecutivo de 5 diapositivas alineado con la sustentación oficial.
+* **`Presentacion_Ejecutiva_RetoB.pdf`**: Pitch deck ejecutivo de 5 diapositivas alineado con la sustentación oficial[cite: 3].
 
 ### ¿Cómo replicar el análisis?
 1. Clone o descargue este repositorio.
