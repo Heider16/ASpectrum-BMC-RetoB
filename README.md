@@ -4,7 +4,7 @@
 Sistema predictivo y de gestión de riesgo para el índice **IPAP-BMC** de la Bolsa Mercantil de Colombia, desarrollado por el equipo **ASpectrum** como parte del DataLab Challenge. Su objetivo es anticipar la tendencia del mercado agropecuario y medir la volatilidad para optimizar la toma de decisiones y las coberturas financieras.
 
 ## 2. Principales Resultados Cuantitativos y Econométricos
-* **Validación Histórica (MAPE):** Se alcanzó un desempeño sobresaliente con un error porcentual absoluto medio del **7%** en la prueba histórica de los últimos 12 meses[cite: 3].
+* **Validación Histórica (MAPE):** Se alcanzó un desempeño sobresaliente con un error porcentual absoluto medio del **7%** en la prueba histórica de los últimos 12 meses.
 * **Poder Explicativo ($R^2$):** El modelo econométrico base logra un coeficiente de determinación ajustado del **98.18%**, capturando de manera efectiva la estacionalidad extrema del sector agropecuario.
 * **Persistencia de la Volatilidad (GARCH):** A través de la modelación GARCH(1,1), se identificó que la suma de los coeficientes $\alpha + \beta$ es extremadamente cercana a 1 (superando 0.99 en índices clave como *IP_agroipe* y *lechem*). Esto demuestra que los choques de precios en el agro **son altamente persistentes en el tiempo**, justificando la urgencia de utilizar instrumentos de cobertura en la Bolsa Mercantil.
 
@@ -69,12 +69,12 @@ Sistema predictivo y de gestión de riesgo para el índice **IPAP-BMC** de la Bo
 | 2023-09-23 | 237.54 | 228.48 | 3.81% |
 | 2023-09-30 | 228.08 | 228.64 | 0.24% |
 | 2023-10-07 | 226.92 | 228.78 | 0.82% |
-| **Promedio Final** | | | **MAPE = 7.0%**[cite: 3] |
+| **Promedio Final** | | | **MAPE = 7.0%** |
 
 ---
 
 ### Tabla 2: Pronóstico Oficial a 12 Meses (52 Observaciones Semanales hasta Octubre de 2026)
-*Proyección continua completa del modelo econométrico con periodicidad semanal[cite: 3].*
+*Proyección continua completa del modelo econométrico con periodicidad semanal*
 
 | Fecha (Semanal) | IPAP Pronosticado | Límite Inferior | Límite Superior |
 | :--- | :--- | :--- | :--- |
@@ -129,15 +129,15 @@ Sistema predictivo y de gestión de riesgo para el índice **IPAP-BMC** de la Bo
 | 2026-09-19 | 237.71 | 213.04 | 262.38 |
 | 2026-09-26 | 237.91 | 213.05 | 262.77 |
 | 2026-10-03 | 238.11 | 213.07 | 263.16 |
-| **2026-10-07 (Cierre)** | **238.28** | **213.08** | **263.48** |[cite: 3]
+| **2026-10-07 (Cierre)** | **238.28** | **213.08** | **263.48** |
 
 ---
 
 ## 4. Estructura y Reproducibilidad del Repositorio
-* **`Concurso.xlsx`**: Datos oficiales, tablas de validación histórica (MAPE) y la proyección oficial a octubre de 2026[cite: 3].
+* **`Concurso.xlsx`**: Datos oficiales, tablas de validación histórica (MAPE) y la proyección oficial a octubre de 2026.
 * **`Resultados_GARCH_Indices.xlsx`**: Consolidado paramétrico de los modelos GARCH ($\mu$, $\omega$, $\alpha$, $\beta$, persistencia, AIC y BIC) para cada subsector.
 * **`untitled6.py`**: Script automatizado en Python que ejecuta la ingesta, las gráficas de series temporales, la estimación de volatilidad con la librería `arch` y la exportación de resultados.
-* **`Presentacion_Ejecutiva_RetoB.pdf`**: Pitch deck ejecutivo de 5 diapositivas alineado con la sustentación oficial[cite: 3].
+* **`Presentacion_Ejecutiva_RetoB.pdf`**: Pitch deck ejecutivo de 5 diapositivas alineado con la sustentación oficial.
 
 ### ¿Cómo replicar el análisis?
 1. Clone o descargue este repositorio.
